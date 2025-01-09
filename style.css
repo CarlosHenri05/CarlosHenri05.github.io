@@ -179,6 +179,7 @@ nav a:active {
         animation: words 20s infinite ;
     }
     .typing-text span::after{
+        content:"";
         background-color: black;
         position: absolute;
         width: calc(100%+8px);
