@@ -12,6 +12,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -28,8 +29,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1rem 9%;
-    background-color: transparent;
+    padding: 1rem 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,7 +41,6 @@ header {
     font-size: 3rem;
     font-weight: 800;
     cursor: pointer;
-    transition: 0.5s ease;
 }
 
 nav a {
@@ -63,27 +62,33 @@ nav a:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8rem;
-    min-height: 100vh;
-    padding: 5rem 9%;
+    gap: 4rem;
+    height: 100vh;
+    padding: 0 5%;
     background-color: black;
+    flex-wrap: wrap;
 }
 
 .home-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    flex: 1;
+    max-width: 450px; /* Controla o tamanho máximo da imagem */
 }
 
 .home-img img {
     width: 100%;
-    max-width: 300px; 
-    height: auto; 
-    border-radius: 50%; 
+    height: auto;
+    border-radius: 50%;
     box-shadow: 0 0 25px aquamarine;
-    cursor: pointer;
     transition: transform 0.2s linear;
+}
+
+.home-img img:hover {
+    transform: scale(1.1);
+}
+
+.home-content {
+    flex: 2;
+    text-align: center;
 }
 
 .home-content h1 {
@@ -93,8 +98,8 @@ nav a:active {
 }
 
 .home-content h3 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
     font-weight: 700;
 }
 
@@ -102,43 +107,50 @@ nav a:active {
     color: aquamarine;
 }
 
-.social-icon a {
-    display: inline-flex;
+.dynamic-text {
+    color: aquamarine;
+    font-weight: 700;
+}
+
+.social-icon {
+    display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: 2rem;
+}
+
+.social-icon a {
     width: 4rem;
     height: 4rem;
     background-color: transparent;
     border: 0.2rem solid aquamarine;
     font-size: 2rem;
     border-radius: 50%;
-    margin: 3rem 1.5rem 3rem 0;
+    margin: 0 1.5rem;
     transition: 0.3s ease;
 }
 
 .social-icon a:hover {
-    color: black;
-    transform: scale(1.3) translateY(-5px);
+    transform: scale(1.3);
     background-color: aquamarine;
+    color: black;
     box-shadow: 0 0 25px aquamarine;
 }
 
 .btn {
     display: inline-block;
-    padding: 1.2rem 2.8rem;
+    padding: 1.2rem 3rem;
     background-color: black;
     border-radius: 4rem;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: aquamarine;
-    letter-spacing: 0.3rem;
     font-weight: 600;
     border: 2px solid aquamarine;
-    transition: 0.3s ease;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .btn:hover {
-    transform: scale(1.03);
+    transform: scale(1.1);
     background-color: aquamarine;
     color: black;
     box-shadow: 0 0 25px aquamarine;
@@ -147,12 +159,7 @@ nav a:active {
 @media (max-width: 995px) {
     .home {
         flex-direction: column;
-        gap: 4rem;
-    }
-
-    .home-img img {
-        max-width: 200px; 
-        margin-top: 2rem;
+        padding: 2rem;
     }
 
     .home-content h1 {
@@ -160,14 +167,13 @@ nav a:active {
     }
 
     .home-content h3 {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
-    .typing-text{
-        font-size: 34px;
-        font-weight: 600;
-        min-width: 280px;
+
+    .home-img {
+        max-width: 350px;
     }
-     span{
+    span{
         color: aquamarine; 
     }
     .typing-text span{
@@ -187,8 +193,32 @@ nav a:active {
         border-left: 3px solid black;
         right: -8;
         animation: cursor 6s infinite;
-        }
+        }  
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 1rem 2rem;
     }
+
+    .logo {
+        font-size: 2.5rem;
+    }
+
+    nav a {
+        font-size: 1.6rem;
+        margin-left: 2rem;
+    }
+
+    .home-content h1 {
+        font-size: 4rem;
+    }
+
+    .home-content h3 {
+        font-size: 2.5rem;
+    }
+}
+ 
     @keyframes cursor{
         to{
             border-left: 3px solid aquamarine;
