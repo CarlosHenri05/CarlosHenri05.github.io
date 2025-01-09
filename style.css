@@ -78,9 +78,9 @@ nav a:active {
 
 .home-img img {
     width: 100%;
-    max-width: 300px; /* Limita o tamanho máximo da imagem */
-    height: auto; /* Mantém a proporção */
-    border-radius: 50%; /* Torna a imagem circular */
+    max-width: 300px; 
+    height: auto; 
+    border-radius: 50%; 
     box-shadow: 0 0 25px aquamarine;
     cursor: pointer;
     transition: transform 0.2s linear;
