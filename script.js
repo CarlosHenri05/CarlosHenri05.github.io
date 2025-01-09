@@ -36,5 +36,5 @@ function deleteEffect() {
     }, 100);
 }
 
-// Inicia o efeito
+
 typeEffect();
