@@ -167,6 +167,9 @@ nav a:active {
         font-weight: 600;
         min-width: 280px;
     }
+     span{
+        color: aquamarine; 
+    }
     .typing-text span{
         position: relative;
     }
@@ -185,6 +188,7 @@ nav a:active {
         right: -8;
         animation: cursor 6s infinite;
     }
+   
 }
     @keyframes cursor{
         to{
