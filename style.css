@@ -173,27 +173,33 @@ nav a:active {
     .home-img {
         max-width: 350px;
     }
-    span{
-        color: aquamarine; 
+    span {
+    color: aquamarine;
     }
-    .typing-text span{
-        position: relative;
+
+    .typing-text span {
+    position: relative;
+    display: inline-block;
+    font-size: 3.5rem; /* Ajuste o tamanho conforme necessário */
+    white-space: nowrap; /* Impede quebra de linha */
     }
-    .typing-text span::before{
-        content: "Software Developer";
-        color: aquamarine;
-        animation: words 20s infinite ;
+
+    .typing-text span::before {
+    content: "Software Developer";
+    color: aquamarine;
+    animation: words 20s infinite;
     }
-    .typing-text span::after{
-        content:"";
-        background-color: black;
-        position: absolute;
-        width: calc(100%+8px);
-        height: 100%;
-        border-left: 3px solid black;
-        right: -8;
-        animation: cursor 6s infinite;
-        }  
+
+    .typing-text span::after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 100%; /* Faz o cursor piscar no final do texto */
+    width: 3px;
+    height: 100%;
+    animation: cursor 0.6s infinite;
+    }
 }
 
 @media (max-width: 768px) {
@@ -218,24 +224,28 @@ nav a:active {
         font-size: 2.5rem;
     }
 }
- 
-    @keyframes cursor{
-        to{
-            border-left: 3px solid aquamarine;
-        }
-    }
-    @keyframes words{
-        0%,20%{
-            content: "Dev BackEnd" ;
-        }
-        21%,40%{
-            content:"Analista CyberSec";
-        }
-        61%,80%{
-            content: "Scripter";
-        }
-        81%,100%{
-            content: "Software Developer";
-        }
-    }
 
+@keyframes cursor {
+    50% {
+        background-color: aquamarine;
+    }
+    100% {
+        background-color: black;
+    }
+}
+
+
+@keyframes words {
+    0%, 20% {
+        content: "Dev BackEnd";
+    }
+    21%, 40% {
+        content: "Analista CyberSec";
+    }
+    41%, 60% {
+        content: "Scripter";
+    }
+    61%, 100% {
+        content: "Software Developer";
+    }
+}
