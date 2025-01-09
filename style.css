@@ -186,3 +186,22 @@ nav a:active {
         animation: cursor 6s infinite;
     }
 }
+    @keyframes cursor{
+        to{
+            border-left: 3px solid aquamarine;
+        }
+    }
+    @keyframes words{
+        0%,20%{
+            content: "Dev BackEnd" ;
+        }
+        21%,40%{
+            content:"Analista CyberSec";
+        }
+        61%,80%{
+            content: "Scripter";
+        }
+        81%,100%{
+            content: "Software Developer";
+        }
+    }
