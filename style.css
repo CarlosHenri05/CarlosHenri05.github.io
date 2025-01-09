@@ -83,7 +83,7 @@ nav a:active {
 }
 
 .home-img img:hover {
-    transform: scale(1.3);
+    transform: scale(1.1);
 }
 
 .home-content {
@@ -114,6 +114,12 @@ nav a:active {
     color: aquamarine;
     font-weight: 700;
 }
+.text-container {
+    max-width: 2000px;
+    text-align: center;
+    line-height: 1.6;
+    flex: 2;
+}
 
 .social-icon {
     display: flex;
@@ -141,9 +147,9 @@ nav a:active {
 
 .btn {
     display: inline-block;
-    padding: 1.2rem 2rem;
+    padding: 1rem 1rem;
     background-color: black;
-    border-radius: 3rem;
+    border-radius: 2rem;
     font-size: 1.8rem;
     color: aquamarine;
     font-weight: 600;
@@ -153,7 +159,7 @@ nav a:active {
 }
 
 .btn:hover {
-    transform: scale(1.1);
+    transform: scale(1.0);
     background-color: aquamarine;
     color: black;
     box-shadow: 0 0 25px aquamarine;
