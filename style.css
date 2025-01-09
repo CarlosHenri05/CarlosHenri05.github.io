@@ -156,51 +156,56 @@ nav a:active {
     box-shadow: 0 0 25px aquamarine;
 }
 
-@media (max-width: 995px) {
-    .home {
+
+.home {
         flex-direction: column;
         padding: 2rem;
-    }
+}
 
-    .home-content h1 {
-        font-size: 5rem;
-    }
+.home-content h1 {
+    font-size: 5rem;
+}
 
-    .home-content h3 {
-        font-size: 2.8rem;
-    }
+.home-content h3 {
+    font-size: 2.8rem;
+ }
 
-    .home-img {
-        max-width: 350px;
-    }
-    span {
-    color: aquamarine;
-    }
+.home-content p{
+    font-size: 2rem;
+}
+
+.home-img {
+    max-width: 350px;
+ }
     
-   .typing-text{
-        font-size: 34px;
-        font-weight: 600;
-        min-width: 280px;
-    }
+ span {
+ color: aquamarine;
+ }
+    
+.typing-text{
+    font-size: 34px;
+       font-weight: 600;
+       min-width: 280px;
+ }
     .typing-text span{
         position: relative;
     }
-    .typing-text span::before{
-        content: "Software Developer";
-        color: aquamarine;
-        animation: words 20s infinite ;
+.typing-text span::before{
+      content: "Software Developer";
+      color: aquamarine;
+      animation: words 20s infinite ;
     }
-    .typing-text span::after{
-        content: "";
-        background-color: black;
-        position: absolute;
-        width: calc(100%+8px);
-        height: 100%;
-        border-left: 3px solid black;
-        right: -8;
-        animation: cursor 6s infinite;
+.typing-text span::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: calc(100%+8px);
+    height: 100%;
+    border-left: 3px solid black;
+    right: -8;
+    animation: cursor 6s infinite;
     }
-}
+
 
 @media (max-width: 768px) {
     header {
