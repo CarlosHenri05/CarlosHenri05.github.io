@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+header {
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    color: aquamarine;
+    font-size: 3rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a:active {
+    color: aquamarine;
+    border: 3px solid aquamarine;
+}
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    height: 100vh;
+    padding: 0 5%;
+    background-color: black;
+    flex-wrap: wrap;
+}
+.skills-png {
+    flex: 1;
+    max-width: 450px; 
+}
+.skills-png skills.png{
+    width: 100%;
+    height: 50%;;
+    border-radius: 0%;
+    box-shadow: 0 0 25px aquamarine;
+}
+.skills-content {
+    font-size: medium;
+}
+span {
+   color: aquamarine; 
+}
+
+@media (max-width: 500px) {
+    header {
+        padding: 1rem 2rem;
+    }
+    .logo{
+        font-size: 2rem;
+    }
+    nav a{
+        font-size: 1.4rem;
+        margin-left: 2rem;
+    }
+    .skills-img {
+        position: relative;
+        opacity: 0.2;
+    }
+    .skills-content{
+        position: absolute;
+        margin-left: 2rem;
+        top: 200px;
+        z-index: 1;
+        font-size: 1.2rem;
+    }
+}

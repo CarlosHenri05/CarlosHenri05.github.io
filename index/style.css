@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+
+header {
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    color: aquamarine;
+    font-size: 3rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a:active {
+    color: aquamarine;
+    border: 3px solid aquamarine;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    height: 100vh;
+    padding: 0 5%;
+    background-color: black;
+    flex-wrap: wrap;
+}
+
+.home-img {
+    flex: 1;
+    max-width: 450px; 
+}
+
+.home-img img {
+    width: 150%;
+    height: 50%;
+    border-radius: 50%;
+    box-shadow: 0 0 25px aquamarine;
+}
+
+.home-content {
+    flex: 2;
+    text-align: center;
+}
+
+.home-content h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+.home-content p {
+    font-size: small;
+}
+
+.home-content span {
+    color: aquamarine;
+}
+
+.dynamic-text {
+    color: aquamarine;
+    font-weight: 700;
+}
+.text-container {
+    max-width: 2000px;
+    text-align: center;
+    line-height: 1.6;
+    flex: 2;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.social-icon a {
+    width: 2.7rem;
+    height: 2.7rem;
+    background-color: transparent;
+    border: 0.2rem solid aquamarine;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 0 1.5rem;
+    transition: 0.3s ease;
+}
+
+.social-icon a:hover {
+    transform: scale(1.3s);
+    background-color: aquamarine;
+    color: black;
+    box-shadow: 0 0 25px aquamarine;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 1rem;
+    background-color: black;
+    border-radius: 2rem;
+    font-size: 1.8rem;
+    color: aquamarine;
+    font-weight: 600;
+    border: 2px solid aquamarine;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.0);
+    background-color: aquamarine;
+    color: black;
+    box-shadow: 0 0 25px aquamarine;
+}
+
+
+    .home {
+        flex-direction: row;
+        padding: 2rem;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+    .home-content h3 {
+        font-size: 2.8rem;
+    }
+    .home-content p {
+        font-size: small;
+    }
+
+    .home-img {
+        max-width: 350px;
+    }
+    span {
+    color: aquamarine;
+    }
+    
+   .typing-text{
+        font-size: 34px;
+        font-weight: 600;
+        min-width: 280px;
+    }
+    .typing-text span{
+        position: relative;
+        display: inline-block;
+        font-size: 3.5rem;
+        white-space: nowrap;
+    }
+    .typing-text span::before{
+        content: "";
+        color: aquamarine;
+        animation: words 20s infinite ;
+    }
+    .typing-text span::after{
+        content: " ";
+        background-color: black;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 3px;
+        height: 100%;
+        border-left: 3px solid black;
+        animation: cursor 0.6s infinite;
+    }
+
+@media (max-width: 500px) {
+    header {
+        padding: 1rem 2rem;
+    }
+
+    .logo {
+        font-size: 2.5rem;
+    }
+
+    nav a {
+        font-size: 1.6rem;
+        margin-left: 2rem;
+    }
+
+    .home-content h1 {
+        font-size: 4rem;
+    }
+
+    .home-content h3 {
+        font-size: 2.5rem;
+    }
+}
+
+@keyframes cursor {
+    50% {
+        background-color: aquamarine;
+    }
+    100% {
+        background-color: black;
+    }
+}
+@keyframes words {
+    0%, 20% {
+        content: "Dev BackEnd";
+    }
+    21%, 40% {
+        content: "Analista CyberSec";
+    }
+    41%, 60% {
+        content: "Scripter";
+    }
+    61%, 100% {
+        content: "Software Developer";
+    }
+}
+
