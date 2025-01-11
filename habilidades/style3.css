@@ -64,15 +64,16 @@ nav a:active {
     background-color: black;
     flex-wrap: wrap;
 }
-.skills-png {
+.skills-img {
     flex: 1;
     max-width: 450px; 
 }
-.skills-png skills.png{
+.skills-img img{
     width: 100%;
-    height: 50%;;
+    height: 20%;;
     border-radius: 0%;
-    box-shadow: 0 0 25px aquamarine;
+    margin-top: 100px;
+
 }
 .skills-content {
     font-size: medium;

@@ -216,6 +216,12 @@ nav a:active {
     header {
         padding: 1rem 2rem;
     }
+    .home-img img {
+        width: 50px;
+        top: 210px;
+        left: 0px;
+        position: relative;
+    }
 
     .logo {
         font-size: 2.5rem;
@@ -231,7 +237,14 @@ nav a:active {
     }
 
     .home-content h3 {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
+        overflow-wrap:break-word;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+    }
+        .home-content p {
+        margin-left: 1rem;
     }
 }
 
@@ -245,16 +258,17 @@ nav a:active {
 }
 @keyframes words {
     0%, 20% {
-        content: "Dev BackEnd";
+        content: "Dev Back End";
     }
     21%, 40% {
-        content: "Analista CyberSec";
+        content: "Analista";
     }
     41%, 60% {
         content: "Scripter";
     }
-    61%, 100% {
-        content: "Software Developer";
+    61%,100%{
+        content: "Pentester";
     }
+    
 }
 

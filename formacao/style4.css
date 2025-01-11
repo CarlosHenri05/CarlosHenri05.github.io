@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+header {
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    color: aquamarine;
+    font-size: 3rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a:active {
+    color: aquamarine;
+    border: 3px solid aquamarine;
+}
+span{
+    color: aquamarine;
+}
+.formacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    height: 100vh;
+    padding: 0 5%;
+    background-color: black;
+    flex-wrap: wrap;
+}
+.foto-formacao{
+    flex: 1;
+    max-width: 250px;
+}
+.foto-formacao img{
+    position: relative;
+    left: -100px;
+    width: 150%;
+    border-radius: 50%;
+    box-shadow: 0 0 25px aquamarine;
+    margin-left: -20px;
+    margin-top: 100px;
+}
+.formacao-superior{
+    font-size: medium;
+    align-items: center;
+
+}
+.formacao-superior h1{
+    color: aqua;
+}
+.formacao-curricular{
+    font-size: medium;
+    align-items: center;
+    margin-left: 450px;
+}
+.formacao-curricular h2{
+    color: aquamarine;
+}
+.formacao-curricular img {
+    position: relative;
+    left: -100px;
+    width: 50%;
+    margin-left: 100px;
+}
+
+
